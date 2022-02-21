@@ -6,11 +6,9 @@ import './index.css'
 import App from './App'
 
 ReactDOM.render(
-  <React.StrictMode>
-    <StyledEngineProvider injectFirst>
-      <CssBaseline />
-      <App />
-    </StyledEngineProvider>
-  </React.StrictMode>,
+  <StyledEngineProvider injectFirst>
+    <CssBaseline />
+    <App />
+  </StyledEngineProvider>,
   document.getElementById('root')
 )
