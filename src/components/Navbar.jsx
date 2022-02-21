@@ -29,15 +29,53 @@ const Navbar = () => {
     <AppBar position="static" className="bg-blue">
       <Container>
         <Toolbar disableGutters>
+          {/* LOGO ON SMALL SCREENS */}
           <Typography
             variant="h6"
             noWrap
             component="div"
-            sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
+            sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' }, ml: 1 }}
           >
             LOGO
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+
+          {/* LOGO ON LARGE SCREENS */}
+          <Typography
+            variant="h6"
+            noWrap
+            component="div"
+            sx={{
+              mr: 2,
+              display: { xs: 'none', md: 'flex' },
+            }}
+          >
+            LOGO
+          </Typography>
+          <Box
+            sx={{
+              flexGrow: 1,
+              display: { xs: 'none', md: 'flex' },
+              justifyContent: 'flex-end',
+            }}
+          >
+            {pages.map((page) => (
+              <Button
+                className="text-base"
+                key={page}
+                onClick={handleCloseNavMenu}
+                sx={{ my: 2, color: 'white', display: 'block' }}
+              >
+                {page}
+              </Button>
+            ))}
+          </Box>
+          <Box
+            sx={{
+              flexGrow: 1,
+              display: { xs: 'flex', md: 'none' },
+              justifyContent: 'flex-end',
+            }}
+          >
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -51,12 +89,14 @@ const Navbar = () => {
             <Menu
               id="menu-navbar"
               anchorEl={anchorElNav}
-              anchorOrigin={{ vertical: 'center', horizontal: 'right' }}
+              anchorOrigin={{ vertical: 'center', horizontal: 'left' }}
               keepMounted
-              transformOrigin={{ vertical: 'top', horizontal: 'right' }}
+              transformOrigin={{ vertical: 'top', horizontal: 'left' }}
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
-              sx={{ display: { xs: 'block', md: 'none' } }}
+              sx={{
+                display: { xs: 'block', md: 'none' },
+              }}
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
@@ -64,25 +104,6 @@ const Navbar = () => {
                 </MenuItem>
               ))}
             </Menu>
-          </Box>
-          <Typography
-            variant="h6"
-            noWrap
-            component="div"
-            sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}
-          >
-            LOGO
-          </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
-              >
-                {page}
-              </Button>
-            ))}
           </Box>
         </Toolbar>
       </Container>
