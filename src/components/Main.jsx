@@ -10,7 +10,7 @@ const Main = () => {
   useEffect(() => {
     setInterval(() => {
       setWrite(true)
-    }, 2000)
+    }, 1000)
     clearInterval()
   }, [])
 
@@ -19,14 +19,14 @@ const Main = () => {
       <Container>
         <div className="flex flex-col justify-center">
           <div>
-            <Fade delay={500}>
+            <Fade delay={300}>
               <h2 className="text-2xl font-normal text-center mt-8 mb-4 tracking-wide">
                 Hi There! I'm <strong>Nacho</strong>.
               </h2>
             </Fade>
           </div>
           <div>
-            <Fade delay={500}>
+            <Fade delay={300}>
               <img
                 className="w-4/5 h-auto block ml-auto mr-auto "
                 src={logo}
@@ -36,7 +36,7 @@ const Main = () => {
           </div>
         </div>
         {write && (
-          <h2 className="text-2xl font-normal text-center w-4/5 mt-4 mr-auto ml-auto tracking-wide">
+          <h2 className="text-lg font-normal text-center w-full mt-4 mr-auto ml-auto tracking-wide">
             <Typewriter
               onInit={(typewriter) => {
                 typewriter
