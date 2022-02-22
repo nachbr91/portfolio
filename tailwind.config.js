@@ -13,6 +13,9 @@ module.exports = {
       'dark-blue': '#1c658c',
       beige: '#d8d2cb',
     },
+    fontFamily: {
+      sans: ['Poppins'],
+    },
     extend: {},
   },
   plugins: [],

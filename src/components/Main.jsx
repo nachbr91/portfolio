@@ -1,36 +1,56 @@
+import { useEffect, useState } from 'react'
 import { Container } from '@mui/material'
 import { Fade } from 'react-reveal'
 import Typewriter from 'typewriter-effect'
+import logo from '../assets/main-logo.svg'
 
 const Main = () => {
+  const [write, setWrite] = useState(false)
+
+  useEffect(() => {
+    setInterval(() => {
+      setWrite(true)
+    }, 2000)
+    clearInterval()
+  }, [])
+
   return (
-    <Container>
-      <main>
-        <h1 className="text-4xl font-normal text-center mt-10 tracking-wide">
-          <Typewriter
-            onInit={(typewriter) => {
-              typewriter
-                .changeDelay(100)
-                .typeString("Hi There! I'm <strong>Nacho</strong>.")
-                .pauseFor(500)
-                .start()
-            }}
-          />
-        </h1>
-        <Fade delay={3000}>
-          <img
-            className="block ml-auto mr-auto h-52 w-auto object-contain rounded-full mt-5"
-            src={require('../assets/profile-image.jpeg')}
-            alt=""
-          />
-        </Fade>
-        <Fade delay={3050}>
-          <h2 className="text-2xl font-normal text-center mt-4 tracking-wide">
-            I'm a Junior <strong>Full Stack Developer</strong>.
+    <main>
+      <Container>
+        <div className="flex flex-col justify-center">
+          <div>
+            <Fade delay={500}>
+              <h2 className="text-2xl font-normal text-center mt-8 mb-4 tracking-wide">
+                Hi There! I'm <strong>Nacho</strong>.
+              </h2>
+            </Fade>
+          </div>
+          <div>
+            <Fade delay={500}>
+              <img
+                className="w-4/5 h-auto block ml-auto mr-auto "
+                src={logo}
+                alt="Logo"
+              />
+            </Fade>
+          </div>
+        </div>
+        {write && (
+          <h2 className="text-2xl font-normal text-center w-4/5 mt-4 mr-auto ml-auto tracking-wide">
+            <Typewriter
+              onInit={(typewriter) => {
+                typewriter
+                  .changeDelay(50)
+                  .typeString(
+                    "I'm a Junior <strong>Full Stack Developer</strong>."
+                  )
+                  .start()
+              }}
+            />
           </h2>
-        </Fade>
-      </main>
-    </Container>
+        )}
+      </Container>
+    </main>
   )
 }
 
