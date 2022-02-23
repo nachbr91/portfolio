@@ -21,7 +21,7 @@ const Main = () => {
           <div>
             <Fade delay={300}>
               <h2 className="text-2xl font-normal text-center mt-8 mb-4 tracking-wide">
-                Hi There! I'm <strong>Nacho</strong>.
+                Hi There! I'm <span className="font-bold">Nacho</span>.
               </h2>
             </Fade>
           </div>
@@ -36,7 +36,7 @@ const Main = () => {
           </div>
         </div>
         {write && (
-          <h2 className="text-lg font-normal text-center w-full mt-4 mr-auto ml-auto tracking-wide">
+          <h2 className="text-lg font-normal text-center w-11/12 mt-5 mr-auto ml-auto tracking-wide">
             <Typewriter
               onInit={(typewriter) => {
                 typewriter

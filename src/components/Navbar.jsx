@@ -30,9 +30,8 @@ const Navbar = () => {
       <AppBar position="static" className="bg-blue">
         <Container>
           <Toolbar disableGutters>
-            {/* LOGO ON SMALL SCREENS */}
             <img
-              className="h-8 w-auto ml-2"
+              className="h-7 w-auto ml-2"
               src={require('../assets/logo.png')}
               alt="Nacho Benito Logo"
             />
