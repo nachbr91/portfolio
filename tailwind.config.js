@@ -8,15 +8,28 @@ module.exports = {
       transparent: 'transparent',
       grey: '#eeeeee',
       blue: '#398ab9',
+      'dark-blue': '#1c658c',
       white: colors.white,
       black: colors.black,
-      'dark-blue': '#1c658c',
       beige: '#d8d2cb',
     },
     fontFamily: {
       sans: ['Poppins'],
     },
-    extend: {},
+    extend: {
+      keyframes: {
+        carousel: {
+          '20%': { transform: 'translateY(-30px)' },
+          '40%': { transform: 'translateY(-60px)' },
+          '60%': { transform: 'translateY(-90px)' },
+          '80%': { transform: 'translateY(-120px)' },
+          '100%': { transform: 'translateY(0px)' },
+        },
+      },
+      animation: {
+        carousel: 'carousel 8s ease-in-out infinite',
+      },
+    },
   },
   plugins: [],
 }
