@@ -21,16 +21,16 @@ const TechCarousel = () => {
                 <div className="h-[29px] text-2xl text-blue font-bold flex flex-col items-center">
                   JavaScript (ES6)
                 </div>
-                <div className="h-[29px]  text-2xl text-blue font-bold flex flex-col items-center">
+                <div className="h-[29px] text-2xl text-blue font-bold flex flex-col items-center">
                   MongoDB
                 </div>
-                <div className="h-[29px]  text-2xl text-blue font-bold flex flex-col items-center">
+                <div className="h-[29px] text-2xl text-blue font-bold flex flex-col items-center">
                   Express
                 </div>
-                <div className="h-[29px]  text-2xl text-blue font-bold flex flex-col items-center">
+                <div className="h-[29px] text-2xl text-blue font-bold flex flex-col items-center">
                   Node.js
                 </div>
-                <div className="h-[29px]  text-2xl text-blue font-bold flex flex-col items-center">
+                <div className="h-[29px] text-2xl text-blue font-bold flex flex-col items-center">
                   React
                 </div>
               </div>
