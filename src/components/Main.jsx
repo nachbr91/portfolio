@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { Container } from '@mui/material'
 import { Fade } from 'react-reveal'
 import Typewriter from 'typewriter-effect'
-import logo from '../assets/main-logo.svg'
+import introImg from '../assets/introduction.svg'
 
 const Main = () => {
   const [write, setWrite] = useState(false)
@@ -29,8 +29,8 @@ const Main = () => {
             <Fade delay={300}>
               <img
                 className="w-4/5 h-auto block ml-auto mr-auto "
-                src={logo}
-                alt="Logo"
+                src={introImg}
+                alt="Person working with a laptop"
               />
             </Fade>
           </div>
