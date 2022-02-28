@@ -19,8 +19,8 @@ const Main = () => {
     <main>
       <Container>
         <Fade delay={300}>
-          <h2 className="text-3xl font-normal text-center mt-8 mb-4 tracking-wide">
-            Hi There! I'm <span className="font-bold">Nacho</span>.
+          <h2 className="text-2xl font-normal text-center mt-6 mb-4 tracking-wide">
+            Hi There! I'm <span className="font-bold">Nacho</span>
           </h2>
         </Fade>
         <Fade delay={300}>
@@ -31,13 +31,13 @@ const Main = () => {
           />
         </Fade>
         {write && (
-          <h2 className="text-2xl font-normal text-center w-full mt-5 mr-auto ml-auto tracking-wide">
+          <h2 className="text-xl font-normal text-center w-full mt-5 mr-auto ml-auto tracking-wide">
             <Typewriter
               onInit={(typewriter) => {
                 typewriter
                   .changeDelay(65)
                   .typeString(
-                    "I'm a Junior <strong>Full-Stack Developer</strong>."
+                    "I'm a Junior <strong>Full-Stack Developer</strong>"
                   )
                   .start()
               }}
