@@ -4,14 +4,23 @@ import { Fade } from 'react-reveal'
 import Typewriter from 'typewriter-effect'
 import introImg from '../assets/introduction.svg'
 import TechCarousel from './TechCarousel'
+import SwipeUpIcon from '@mui/icons-material/SwipeUp'
 
 const Main = () => {
   const [write, setWrite] = useState(false)
+  const [hidden, setHidden] = useState(true)
 
   useEffect(() => {
     setInterval(() => {
       setWrite(true)
     }, 1000)
+    clearInterval()
+  }, [])
+
+  useEffect(() => {
+    setInterval(() => {
+      setHidden(false)
+    }, 4250)
     clearInterval()
   }, [])
 
@@ -45,6 +54,11 @@ const Main = () => {
           </h2>
         )}
         <TechCarousel />
+        {!hidden && (
+          <div className="animate-bounce text-blue text-center mt-[200px]">
+            <SwipeUpIcon sx={{ width: 65, height: 65 }} />
+          </div>
+        )}
       </Container>
     </main>
   )
