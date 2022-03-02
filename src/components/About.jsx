@@ -13,18 +13,18 @@ const About = () => {
             alt="Nacho Benito"
           />
           <h2 className="text-xl font-bold">About Me</h2>
-          <p className="w-[95%] mx-auto text-base text-left mt-0">
+          <p className="w-[96%] mx-auto text-base text-left tracking-wide mt-0">
             I'm a{' '}
             <span className="font-bold">
               software developer located in Valencia (Spain)
             </span>{' '}
             . I'm focused both on Front-end and Back-end technologies.
           </p>
-          <p className="w-[95%] mx-auto text-base text-left mt-0">
+          <p className="w-[96%] mx-auto text-base text-left tracking-wide mt-0">
             I'm a coding enthusiast and I'm highly interested about technology,
             computers and videogames.
           </p>
-          <p className="w-[95%] mx-auto text-base text-left my-0">
+          <p className="w-[96%] mx-auto text-base text-left tracking-wide my-0">
             After many years of wanting to learn how to develop web
             applications, I finally decided to take the leap and become{' '}
             <span className="font-bold">Web Developer</span>.
@@ -57,7 +57,7 @@ const About = () => {
               </div>
             </a>
           </div>
-          <p className="w-[95%] mx-auto text-base text-left mt-0">
+          <p className="w-[96%] mx-auto text-base text-left tracking-wide mt-0">
             I consider myself as a{' '}
             <span className="font-bold">
               determined, intuitive and colaborative
