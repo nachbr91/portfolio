@@ -27,7 +27,7 @@ const Main = () => {
   return (
     <main>
       <Container>
-        <div className="h-full">
+        <div className="h-vh">
           <Fade delay={300}>
             <h2 className="text-2xl font-normal text-center mt-6 mb-4 tracking-wide">
               Hi There! I'm <span className="font-bold">Nacho</span>
@@ -60,7 +60,7 @@ const Main = () => {
               <div className="animate-bounce text-blue text-center mt-[80px]">
                 <SwipeUpIcon sx={{ width: 55, height: 55 }} />
               </div>
-              <p className="text-2xl text-center mt-[50px] mx-auto w-[50%]">
+              <p className="text-xl text-center mt-[50px] mx-auto w-[50%]">
                 Swipe Up to know me better!
               </p>
             </>
