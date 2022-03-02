@@ -56,10 +56,10 @@ const Main = () => {
         <TechCarousel />
         {!isHidden && (
           <>
-            <div className="animate-bounce text-blue text-center mt-[80px]">
+            <div className="animate-bounce text-blue text-center mt-[70px]">
               <SwipeUpIcon sx={{ width: 55, height: 55 }} />
             </div>
-            <p className="text-xl text-center mt-[50px] mx-auto w-[50%]">
+            <p className="text-xl text-center mt-[45px] mx-auto w-[50%]">
               Swipe Up to know me better!
             </p>
           </>
