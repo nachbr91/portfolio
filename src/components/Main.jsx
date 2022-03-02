@@ -25,10 +25,10 @@ const Main = () => {
   }, [])
 
   return (
-    <main className="max-h-screen">
+    <main className="h-[88vh]">
       <Container>
         <Fade delay={300}>
-          <h2 className="text-2xl font-normal text-center mt-6 mb-4 tracking-wide">
+          <h2 className="text-2xl font-normal text-center tracking-wide">
             Hi There! I'm <span className="font-bold">Nacho</span>
           </h2>
         </Fade>
@@ -40,7 +40,7 @@ const Main = () => {
           />
         </Fade>
         {isWrite && (
-          <h2 className="text-xl font-normal text-center w-full mt-5 mr-auto ml-auto tracking-wide">
+          <h2 className="text-xl font-normal text-center w-full mr-auto ml-auto tracking-wide">
             <Typewriter
               onInit={(typewriter) => {
                 typewriter
@@ -59,7 +59,7 @@ const Main = () => {
             <div className="animate-bounce text-blue text-center mt-[70px]">
               <SwipeUpIcon sx={{ width: 55, height: 55 }} />
             </div>
-            <p className="text-xl text-center mt-[45px] mx-auto w-[50%]">
+            <p className="text-xl text-center mt-[45px] mb-0 mx-auto w-[50%]">
               Swipe Up to know me better!
             </p>
           </>
