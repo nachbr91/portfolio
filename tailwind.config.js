@@ -41,9 +41,16 @@ module.exports = {
           '80%': { transform: 'translateY(-120px)' },
           '100%': { transform: 'translateY(0px)' },
         },
+        fadeIn: {
+          '0%': { opacity: 0 },
+          '33%': { opacity: 0.33 },
+          '66%': { opacity: 0.66 },
+          '100%': { opacity: 1 },
+        },
       },
       animation: {
         carousel: 'carousel 8s ease-in-out infinite',
+        fadeIn: 'fadeIn 0.3s',
       },
     },
   },

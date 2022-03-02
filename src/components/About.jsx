@@ -3,7 +3,7 @@ import picture from '../assets/picture.png'
 
 const About = () => {
   return (
-    <section className=" h-screen">
+    <section className="h-screen">
       <Container>
         <div className="flex flex-col items-center">
           <img

@@ -25,7 +25,7 @@ const Main = () => {
   }, [])
 
   return (
-    <main className="h-[88vh]">
+    <main>
       <Container>
         <Fade delay={300}>
           <h2 className="text-2xl font-normal text-center tracking-wide">
@@ -55,14 +55,14 @@ const Main = () => {
         )}
         <TechCarousel />
         {!isHidden && (
-          <>
+          <div className="animate-fadeIn">
             <p className="text-xl text-center mt-[15%] mx-auto w-[60%]">
               Swipe Up to know me better!
             </p>
             <div className="animate-bounce text-blue text-center mt-[15%]">
               <SwipeUpIcon sx={{ width: 60, height: 60 }} />
             </div>
-          </>
+          </div>
         )}
       </Container>
     </main>
