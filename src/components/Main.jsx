@@ -56,10 +56,10 @@ const Main = () => {
         <TechCarousel />
         {!isHidden && (
           <div className="animate-fadeIn">
-            <p className="text-xl text-center mt-[15%] mx-auto w-[60%]">
+            <p className="text-xl text-center mt-[6%] mx-auto w-[60%]">
               Swipe Up to know me better!
             </p>
-            <div className="animate-bounce text-blue text-center mt-[15%]">
+            <div className="animate-bounce text-blue text-center mt-[10%]">
               <SwipeUpIcon sx={{ width: 60, height: 60 }} />
             </div>
           </div>
