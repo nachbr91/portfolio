@@ -25,7 +25,7 @@ const Main = () => {
   }, [])
 
   return (
-    <main className="h-screen">
+    <main className="max-h-screen">
       <Container>
         <Fade delay={300}>
           <h2 className="text-2xl font-normal text-center mt-6 mb-4 tracking-wide">
