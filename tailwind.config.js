@@ -14,7 +14,23 @@ module.exports = {
       beige: '#d8d2cb',
     },
     fontFamily: {
-      sans: ['Poppins'],
+      sans: [
+        'Poppins',
+        'ui-sans-serif',
+        'system-ui',
+        '-apple-system',
+        'BlinkMacSystemFont',
+        'Segoe UI',
+        'Roboto',
+        'Helvetica Neue',
+        'Arial',
+        'Noto Sans',
+        'sans-serif',
+        'Apple Color Emoji',
+        'Segoe UI Emoji',
+        'Segoe UI Symbol',
+        'Noto Color Emoji',
+      ],
     },
     extend: {
       keyframes: {
