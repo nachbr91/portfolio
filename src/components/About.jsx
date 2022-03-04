@@ -4,7 +4,7 @@ import certifiedLogo from '../assets/certified-logo.png'
 
 const About = () => {
   return (
-    <section className="h-screen">
+    <section className="h-auto">
       <Container>
         <div className="flex flex-col items-center">
           <img
@@ -29,7 +29,7 @@ const About = () => {
             applications, I finally decided to take the leap and become{' '}
             <span className="font-bold">Web Developer</span>.
           </p>
-          <div className="flex w-[96%] my-[3%] mx-auto rounded-md shadow">
+          <div className="flex w-[96%] my-[3%] mx-auto rounded-md shadow md:hover:cursor-pointer">
             <a
               href="https://www.credential.net/feedad41-8d40-4150-bec7-803d12d100c9"
               target="_blank"

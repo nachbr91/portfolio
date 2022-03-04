@@ -3,6 +3,7 @@ import ScrollAnimation from 'react-animate-on-scroll'
 import About from './components/About'
 import Main from './components/Main'
 import Navbar from './components/Navbar'
+import Skills from './components/Skills'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         animatePreScroll={false}
       >
         <About />
+        <Skills />
       </ScrollAnimation>
     </Fragment>
   )
