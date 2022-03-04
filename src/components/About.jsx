@@ -18,7 +18,7 @@ const About = () => {
             <span className="font-bold">
               software developer located in Valencia (Spain)
             </span>{' '}
-            . I'm focused both on Front-end and Back-end technologies.
+            . I'm focused on both Front-end and Back-end technologies.
           </p>
           <p className="w-[96%] mx-auto text-base text-left tracking-wide mt-0">
             I'm a coding enthusiast and I'm highly interested about technology,
@@ -29,14 +29,14 @@ const About = () => {
             applications, I finally decided to take the leap and become{' '}
             <span className="font-bold">Web Developer</span>.
           </p>
-          <div className="flex justify- w-[85%] my-[2%] mx-auto">
+          <div className="flex w-[96%] my-[3%] mx-auto rounded-md shadow">
             <a
               href="https://www.credential.net/feedad41-8d40-4150-bec7-803d12d100c9"
               target="_blank"
               rel="noreferrer"
             >
               <img
-                className="h-[80px] w-auto mt-0"
+                className="h-[80px] w-auto mt-1.5 mb-0 ml-1"
                 src={certifiedLogo}
                 alt="Credential certification logo"
               />
@@ -47,9 +47,9 @@ const About = () => {
               rel="noreferrer"
               className="no-underline text-black"
             >
-              <div className="flex flex-col items-center">
+              <div className="flex flex-col items-center mt-1">
                 <h3 className="text-sm font-bold mb-0">
-                  Graduation Certificate
+                  Ironhack Graduation Certificate
                 </h3>
                 <p className="text-sm text-center mt-0">
                   Web Development Full-Time Bootcamp
@@ -57,13 +57,13 @@ const About = () => {
               </div>
             </a>
           </div>
-          <p className="w-[96%] mx-auto text-base text-left tracking-wide mt-0">
+          <p className="w-[96%] mx-auto text-left tracking-wide mt-0">
             I consider myself as a{' '}
             <span className="font-bold">
               determined, intuitive and colaborative
             </span>{' '}
             person. I adapt quickly to changes, I'm a team player and I'm not
-            afraid to step out of my confort zone.
+            afraid to step out of my comfort zone.
           </p>
         </div>
       </Container>
