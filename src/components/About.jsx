@@ -58,9 +58,9 @@ const About = () => {
             </a>
           </div>
           <p className="w-[96%] mx-auto text-left tracking-wide mt-0">
-            I consider myself as a{' '}
+            From my professional experience in HR, I consider myself as a{' '}
             <span className="font-bold">
-              determined, intuitive and colaborative
+              determined, intuitive, creative and colaborative
             </span>{' '}
             person. I adapt quickly to changes, I'm a team player and I'm not
             afraid to step out of my comfort zone.
