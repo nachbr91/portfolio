@@ -61,7 +61,7 @@ const About = () => {
               </div>
             </div>
           </div>
-          <p className="w-[96%] mx-auto text-left tracking-wide mt-0">
+          <p className="w-[96%] mx-auto text-left tracking-wide my-0">
             From my professional experience in HR, I consider myself as a{' '}
             <span className="font-bold">
               determined, intuitive, creative and colaborative
