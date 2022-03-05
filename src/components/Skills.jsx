@@ -7,7 +7,7 @@ import mongodbLogo from '../assets/mongodb-logo.svg'
 import htmlLogo from '../assets/html-logo.svg'
 import cssLogo from '../assets/css-logo.svg'
 import tailwindcssLogo from '../assets/tailwindcss-logo.svg'
-// import postmanLogo from '../assets/postman-logo.svg'
+import postmanLogo from '../assets/postman-logo.png'
 import muiLogo from '../assets/mui-logo.png'
 import bootstrapLogo from '../assets/bootstrap-logo.svg'
 
@@ -53,11 +53,11 @@ const Skills = () => {
       name: 'tailwindcss',
       url: 'https://tailwindcss.com/',
     },
-    // {
-    //   img: postmanLogo,
-    //   name: 'Postman',
-    //   url: 'https://postman.com/',
-    // },
+    {
+      img: postmanLogo,
+      name: 'Postman',
+      url: 'https://postman.com/',
+    },
     {
       img: muiLogo,
       name: 'MUI',
