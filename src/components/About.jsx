@@ -29,33 +29,37 @@ const About = () => {
             applications, I finally decided to take the leap and become{' '}
             <span className="font-bold">Web Developer</span>.
           </p>
-          <div className="flex w-[96%] my-[3%] mx-auto rounded-md shadow md:hover:cursor-pointer">
-            <a
-              href="https://www.credential.net/feedad41-8d40-4150-bec7-803d12d100c9"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img
-                className="h-[80px] w-auto mt-1.5 mb-0 ml-1"
-                src={certifiedLogo}
-                alt="Credential certification logo"
-              />
-            </a>
-            <a
-              href="https://www.credential.net/feedad41-8d40-4150-bec7-803d12d100c9"
-              target="_blanck"
-              rel="noreferrer"
-              className="no-underline text-black"
-            >
-              <div className="flex flex-col items-center mt-1">
-                <h3 className="text-sm font-bold mb-0">
-                  Ironhack Graduation Certificate
-                </h3>
-                <p className="text-sm text-center mt-0">
-                  Web Development Full-Time Bootcamp
-                </p>
+          <div className="flex my-[3%] w-[96%] mx-auto rounded-md items-center shadow-md md:hover:cursor-pointer">
+            <div className="flex-1 mx-auto ml-[2%]">
+              <a
+                href="https://www.credential.net/feedad41-8d40-4150-bec7-803d12d100c9"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  className="h-[80px] w-auto mt-1.5 mb-0 ml-1"
+                  src={certifiedLogo}
+                  alt="Credential certification logo"
+                />
+              </a>
+            </div>
+            <div className="flex flex-col">
+              <div className="flex-1 items-center">
+                <a
+                  href="https://www.credential.net/feedad41-8d40-4150-bec7-803d12d100c9"
+                  target="_blanck"
+                  rel="noreferrer"
+                  className="no-underline text-black"
+                >
+                  <h3 className="text-sm text-center font-bold my-0">
+                    Ironhack Graduation Certificate
+                  </h3>
+                  <p className="text-sm text-center my-0">
+                    Web Development Full-Time Bootcamp
+                  </p>
+                </a>
               </div>
-            </a>
+            </div>
           </div>
           <p className="w-[96%] mx-auto text-left tracking-wide mt-0">
             From my professional experience in HR, I consider myself as a{' '}

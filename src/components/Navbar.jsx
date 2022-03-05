@@ -12,7 +12,7 @@ import {
 } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu'
 
-const pages = ['About Me', 'Projects', 'Contact', 'Resume']
+const pages = ['About Me', 'Stack & Tools', 'Projects', 'Contact', 'Resume']
 
 const Navbar = () => {
   const [anchorElNav, setAnchorElNav] = useState(null)
