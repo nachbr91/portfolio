@@ -56,7 +56,7 @@ const Projects = () => {
               <a
                 className="text-black"
                 href={project.githubRepo}
-                target="_blank"
+                target="blank"
                 rel="author"
                 alt="GitHub Repository"
               >
