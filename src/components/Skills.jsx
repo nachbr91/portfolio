@@ -1,4 +1,3 @@
-import { Container } from '@mui/material'
 import jsLogo from '../assets/js-logo.svg'
 import reactLogo from '../assets/react-logo.svg'
 import nodeLogo from '../assets/node-logo.svg'
@@ -8,7 +7,6 @@ import htmlLogo from '../assets/html-logo.svg'
 import cssLogo from '../assets/css-logo.svg'
 import tailwindcssLogo from '../assets/tailwindcss-logo.svg'
 import postmanLogo from '../assets/postman-logo.png'
-import muiLogo from '../assets/mui-logo.png'
 import bootstrapLogo from '../assets/bootstrap-logo.svg'
 
 const Skills = () => {
@@ -54,32 +52,28 @@ const Skills = () => {
       url: 'https://tailwindcss.com/',
     },
     {
-      img: postmanLogo,
-      name: 'Postman',
-      url: 'https://postman.com/',
-    },
-    {
-      img: muiLogo,
-      name: 'MUI',
-      url: 'https://mui.com/',
-    },
-    {
       img: bootstrapLogo,
       name: 'Bootstrap',
       url: 'https://getbootstrap.com/',
+    },
+    {
+      img: postmanLogo,
+      name: 'Postman',
+      url: 'https://postman.com/',
     },
   ]
 
   return (
     <section className="bg-gray h-auto">
-      <Container>
-        <h2 className="text-xl text-center pt-3 mb-0">Stack & Tools</h2>
+      <div className="container">
+        <h2 className="text-xl text-center pt-3 mb-1">Stack & Tools</h2>
         <div className="flex flex-wrap justify-evenly pb-3">
           {skillsData.map((skill) => (
             <a
               className="hover:cursor-pointer"
               href={skill.url}
-              target="_blanck"
+              target="_blank"
+              rel="noreferrer"
               key={skill.name}
             >
               <img
@@ -90,7 +84,7 @@ const Skills = () => {
             </a>
           ))}
         </div>
-      </Container>
+      </div>
     </section>
   )
 }

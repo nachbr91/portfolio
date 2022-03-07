@@ -4,6 +4,14 @@ module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   important: '#root',
   theme: {
+    container: {
+      padding: {
+        DEFAULT: '1rem',
+        sm: '1rem',
+        lg: '4rem',
+      },
+      center: true,
+    },
     colors: {
       transparent: 'transparent',
       gray: '#eeeeee',
