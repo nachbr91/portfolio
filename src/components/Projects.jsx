@@ -56,8 +56,8 @@ const Projects = () => {
               <a
                 className="text-black"
                 href={project.githubRepo}
-                target="blank"
-                rel="author"
+                target="_blank"
+                rel="noreferrer"
                 alt="GitHub Repository"
               >
                 <GitHubIcon />
