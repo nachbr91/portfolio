@@ -10,12 +10,12 @@ const About = () => {
           src={picture}
           alt="Nacho Benito"
         />
-        <h2 className="text-xl font-bold">About Me</h2>
+        <h2 className="text-xl">About Me</h2>
         <p className="w-[96%] mx-auto text-base text-left tracking-wide mt-0">
           I'm a{' '}
           <span className="font-bold">
             software developer located in Valencia (Spain)
-          </span>{' '}
+          </span>
           . I'm focused on both Front-end and Back-end technologies.
         </p>
         <p className="w-[96%] mx-auto text-base text-left tracking-wide mt-0">

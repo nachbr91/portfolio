@@ -27,7 +27,7 @@ const Projects = () => {
       githubRepo: 'https://github.com/IronSell/IronJobs-App',
       img: ironjobsImg,
       description:
-        "My last project for Ironhack which I made with two classmates. IronJobs it's a Full Stack Web Application where you can access as a candidate or as a company and see posted job vacancies and registered candidates. The actual version is for desktop only, but a responsive version will be released soon.",
+        'My final project for Ironhack which I made with two classmates. IronJobs is a Full Stack Web Application where you can access as a candidate or as a company and see posted job vacancies and registered candidates. The actual version is for desktop only, but a responsive version will be released soon.',
     },
     {
       name: 'F1 App',
@@ -57,11 +57,11 @@ const Projects = () => {
       <div className="flex flex-col">
         {projectsData.map((project) => (
           <div
-            className="flex flex-col justify-center flex-1 items-center h-auto mx-auto border-[3px] border-solid rounded-lg border-gray mb-[5%]"
+            className="flex flex-col justify-center flex-1 items-center h-auto mx-auto border-[3px] border-solid rounded-lg border-dark-gray mb-[5%]"
             key={project.name}
           >
             <img className="w-full h-auto" src={project.img} alt="Project" />
-            <hr className="w-full border border-solid border-gray rounded-lg mt-0 mb-1" />
+            <hr className="w-full border-2 border-solid border-dark-gray rounded-lg mt-0 mb-1" />
             <h3 className=" font-normal mt-0 mb-[1%]">{project.name}</h3>
             <p className="text-center text-sm text-blue font-bold my-[1%]">
               {project.technologies}
