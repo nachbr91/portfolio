@@ -2,16 +2,14 @@ import { useState } from 'react'
 import {
   AppBar,
   Box,
-  Button,
   IconButton,
+  Link,
   Menu,
   MenuItem,
   Toolbar,
   Typography,
 } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu'
-
-const pages = ['About Me', 'Stack & Tools', 'Projects', 'Contact', 'Resume']
 
 const Navbar = () => {
   const [anchorElNav, setAnchorElNav] = useState(null)
@@ -40,16 +38,38 @@ const Navbar = () => {
               justifyContent: 'flex-end',
             }}
           >
-            {pages.map((page) => (
-              <Button
-                className="text-base font-sans font-bold"
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
-              >
-                {page}
-              </Button>
-            ))}
+            <a
+              href="#about-me"
+              className="text-base text-white font-sans font-bold uppercase no-underline mr-3"
+            >
+              About Me
+            </a>
+            <a
+              href="#skills"
+              className="text-base text-white font-sans font-bold uppercase no-underline mr-3"
+            >
+              Stack & Tools
+            </a>
+            <a
+              href="#projects"
+              className="text-base text-white font-sans font-bold uppercase no-underline mr-3"
+            >
+              Projects
+            </a>
+            <a
+              href="#contact"
+              className="text-base text-white font-sans font-bold uppercase no-underline mr-3"
+            >
+              Contact
+            </a>
+            <a
+              href="#resume"
+              // target="_blank"
+              // rel="noreferrer"
+              className="text-base text-white font-sans font-bold uppercase no-underline mr-3"
+            >
+              Resume
+            </a>
           </Box>
           <Box
             sx={{
@@ -80,13 +100,61 @@ const Navbar = () => {
                 display: { xs: 'block', md: 'none' },
               }}
             >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography fontFamily="Poppins" textAlign="center">
-                    {page}
+              <MenuItem onClick={handleCloseNavMenu}>
+                <Link href="#about-me" underline="none">
+                  <Typography
+                    fontFamily="Poppins"
+                    color="#000"
+                    textAlign="center"
+                  >
+                    About Me
                   </Typography>
-                </MenuItem>
-              ))}
+                </Link>
+              </MenuItem>
+              <MenuItem onClick={handleCloseNavMenu}>
+                <Link href="#skills" underline="none">
+                  <Typography
+                    fontFamily="Poppins"
+                    color="#000"
+                    textAlign="center"
+                  >
+                    Stack & Tools
+                  </Typography>
+                </Link>
+              </MenuItem>
+              <MenuItem onClick={handleCloseNavMenu}>
+                <Link href="#projects" underline="none">
+                  <Typography
+                    fontFamily="Poppins"
+                    color="#000"
+                    textAlign="center"
+                  >
+                    Projects
+                  </Typography>
+                </Link>
+              </MenuItem>
+              <MenuItem onClick={handleCloseNavMenu}>
+                <Link href="#contact" underline="none">
+                  <Typography
+                    fontFamily="Poppins"
+                    color="#000"
+                    textAlign="center"
+                  >
+                    Contact
+                  </Typography>
+                </Link>
+              </MenuItem>
+              <MenuItem onClick={handleCloseNavMenu}>
+                <Link href="#resume" underline="none">
+                  <Typography
+                    fontFamily="Poppins"
+                    color="#000"
+                    textAlign="center"
+                  >
+                    Resume
+                  </Typography>
+                </Link>
+              </MenuItem>
             </Menu>
           </Box>
         </Toolbar>

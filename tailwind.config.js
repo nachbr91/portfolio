@@ -1,7 +1,7 @@
 const colors = require('tailwindcss/colors')
 
 module.exports = {
-  content: ['./src/**/*.{js,jsx,ts,tsx}'],
+  content: ['./src/**/*.{js,jsx}'],
   important: '#root',
   theme: {
     container: {
@@ -52,10 +52,20 @@ module.exports = {
           '80%': { opacity: 0.8 },
           '100%': { opacity: 1 },
         },
+        bob: {
+          '0%': { transform: 'translateY(-8px)' },
+          '50%': { transform: 'translateY(-4px)' },
+          '100%': { transform: 'translateY(-8px)' },
+        },
+        float: {
+          '100%': { transform: 'translateY(-8px)' },
+        },
       },
       animation: {
         carousel: 'carousel 8s ease-in-out infinite',
         fadeIn: 'fadeIn 0.3s',
+        bob: 'bob .3s 0s ease-out 1 infinite forwards nomral',
+        float: 'float .9s 0s ease-in-out infinite alternate',
       },
     },
   },

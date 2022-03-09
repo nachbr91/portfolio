@@ -3,7 +3,7 @@ import certifiedLogo from '../assets/certified-logo.png'
 
 const About = () => {
   return (
-    <section className="container h-auto">
+    <section className="container h-auto" id="about-me">
       <div className="flex flex-col items-center">
         <img
           className="rounded-full h-[200px] w-auto object-contain"

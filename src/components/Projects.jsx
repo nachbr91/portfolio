@@ -52,7 +52,7 @@ const Projects = () => {
   ]
 
   return (
-    <section className="container h-auto">
+    <section className="container h-auto" id="projects">
       <h2 className="text-center text-xl">Projects</h2>
       <div className="flex flex-col">
         {projectsData.map((project) => (
