@@ -59,7 +59,7 @@ const Projects = () => {
             key={project.name}
           >
             <img
-              className="w-full h-auto mb-[2%] md:h-[250px] md:object-fit"
+              className="w-full h-auto mb-[2%] md:h-[320px] md:w-[100%] md:object-fit"
               src={project.img}
               alt="Project"
             />
