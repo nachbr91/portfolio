@@ -9,10 +9,8 @@ const Projects = () => {
   const projectsData = [
     {
       name: 'Portfolio',
-      technologies: [
-        'React | JavaScript (ES6) | Tailwind CSS | Responsive | HTML5 | CSS3 | Vercel',
-      ],
-      url: 'https://nachobenito.vercel.app/',
+      technologies: ['React | Tailwind CSS | Responsive | Vercel'],
+      url: 'https://nachobenito.dev/',
       githubRepo: 'https://github.com/nachbr91/portfolio',
       img: portfolioImg,
       description:
@@ -21,7 +19,7 @@ const Projects = () => {
     {
       name: 'IronJobs',
       technologies: [
-        'React | JavaScript (ES6) | Node.js | Express | MongoDB | Ant Design | HTML5 | CSS3 | Heroku',
+        'React | Node.js | Express | MongoDB | Ant Design | CSS3 | Heroku',
       ],
       url: 'https://ironjobs-app.herokuapp.com/',
       githubRepo: 'https://github.com/IronSell/IronJobs-App',
@@ -47,7 +45,7 @@ const Projects = () => {
       githubRepo: 'https://github.com/nachbr91/IronHack-Project_1',
       img: ironslugImg,
       description:
-        "My first project for Ironhack. Iron Slug it's a videogame using canvas and vanilla JavaScript. It's a classic shooter inspired in Metal Slug. It's developed for playing on a desktop computer.  ",
+        "My first project for Ironhack. Iron Slug is a videogame using canvas and vanilla JavaScript. It's a classic shooter inspired in Metal Slug and developed for playing on a desktop computer.",
     },
   ]
 
@@ -71,7 +69,7 @@ const Projects = () => {
             </p>
             <div className="flex w-[150px] justify-evenly">
               <a
-                className="text-blue"
+                className="text-blue hover:animate-bob hover:animate-float focus:animate-bob focus:animate-float active:animate-bob active:animate-float"
                 href={project.githubRepo}
                 target="_blank"
                 rel="noreferrer"
@@ -80,7 +78,7 @@ const Projects = () => {
                 <CodeIcon fontSize="large" />
               </a>
               <a
-                className="text-blue"
+                className="text-blue hover:animate-bob hover:animate-float focus:animate-bob focus:animate-float active:animate-bob active:animate-float"
                 href={project.url}
                 target="_blank"
                 rel="noreferrer"

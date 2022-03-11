@@ -40,25 +40,25 @@ const Navbar = () => {
           >
             <a
               href="#about-me"
-              className="text-base text-white font-sans font-bold uppercase no-underline mr-3"
+              className="text-base text-white font-sans font-bold uppercase no-underline mr-3 inline-block relative before:content-[''] before:absolute before:bg-white before:left-0 before:rigth-full before:bottom-0 before:h-0.5 hover:before:right-0"
             >
               About Me
             </a>
             <a
               href="#skills"
-              className="text-base text-white font-sans font-bold uppercase no-underline mr-3"
+              className="text-base text-white font-sans font-bold uppercase no-underline mr-3 inline-block relative before:content-[''] before:absolute before:bg-white before:left-0 before:rigth-full before:bottom-0 before:h-0.5 hover:before:right-0"
             >
               Stack & Tools
             </a>
             <a
               href="#projects"
-              className="text-base text-white font-sans font-bold uppercase no-underline mr-3"
+              className="text-base text-white font-sans font-bold uppercase no-underline mr-3 inline-block relative before:content-[''] before:absolute before:bg-white before:left-0 before:rigth-full before:bottom-0 before:h-0.5 hover:before:right-0"
             >
               Projects
             </a>
             <a
               href="#contact"
-              className="text-base text-white font-sans font-bold uppercase no-underline mr-3"
+              className="text-base text-white font-sans font-bold uppercase no-underline mr-3 inline-block relative before:content-[''] before:absolute before:bg-white before:left-0 before:rigth-full before:bottom-0 before:h-0.5 hover:before:right-0"
             >
               Contact
             </a>
@@ -66,7 +66,7 @@ const Navbar = () => {
               href="#resume"
               // target="_blank"
               // rel="noreferrer"
-              className="text-base text-white font-sans font-bold uppercase no-underline mr-3"
+              className="text-base text-white font-sans font-bold uppercase no-underline mr-3 inline-block relative before:content-[''] before:absolute before:bg-white before:left-0 before:rigth-full before:bottom-0 before:h-0.5 hover:before:right-0"
             >
               Resume
             </a>
@@ -159,6 +159,7 @@ const Navbar = () => {
           </Box>
         </Toolbar>
       </AppBar>
+      <style>.hover-underline-animation {}</style>
     </nav>
   )
 }

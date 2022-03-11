@@ -8,6 +8,7 @@ import cssLogo from '../assets/css-logo.svg'
 import tailwindcssLogo from '../assets/tailwindcss-logo.svg'
 import postmanLogo from '../assets/postman-logo.png'
 import bootstrapLogo from '../assets/bootstrap-logo.svg'
+import gitLogo from '../assets/git-logo.svg'
 
 const Skills = () => {
   const skillsData = [
@@ -60,6 +61,11 @@ const Skills = () => {
       img: postmanLogo,
       name: 'Postman',
       url: 'https://postman.com/',
+    },
+    {
+      img: gitLogo,
+      name: 'Git',
+      url: 'https://git-scm.com/',
     },
   ]
 
