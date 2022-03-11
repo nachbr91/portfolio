@@ -8,15 +8,6 @@ import ironslugImg from '../assets/ironslug.png'
 const Projects = () => {
   const projectsData = [
     {
-      name: 'Portfolio',
-      technologies: ['React | Tailwind CSS | Responsive | Vercel'],
-      url: 'https://nachobenito.dev/',
-      githubRepo: 'https://github.com/nachbr91/portfolio',
-      img: portfolioImg,
-      description:
-        "My personal website where I will be posting my personal projects, what I'm currently learning, interests, etc.",
-    },
-    {
       name: 'IronJobs',
       technologies: [
         'React | Node.js | Express | MongoDB | Ant Design | CSS3 | Heroku',
@@ -47,6 +38,15 @@ const Projects = () => {
       description:
         "My first project for Ironhack. Iron Slug is a videogame using canvas and vanilla JavaScript. It's a classic shooter inspired in Metal Slug and developed for playing on a desktop computer.",
     },
+    {
+      name: 'Portfolio',
+      technologies: ['React | Tailwind CSS | Responsive | Vercel'],
+      url: 'https://nachobenito.dev/',
+      githubRepo: 'https://github.com/nachbr91/portfolio',
+      img: portfolioImg,
+      description:
+        "My personal website where I will be posting my personal projects, what I'm currently learning, interests, etc.",
+    },
   ]
 
   return (
@@ -55,20 +55,20 @@ const Projects = () => {
       <div className="flex flex-col md:flex-row md:flex-wrap">
         {projectsData.map((project) => (
           <div
-            className="flex flex-col justify-center items-center h-auto mx-auto border-[3px] border-solid rounded-lg border-dark-gray mb-[5%] md:w-[45%] md:h-fit"
+            className="flex flex-col justify-center items-center h-auto mx-auto mb-[5%] md:w-[45%] md:h-fit"
             key={project.name}
           >
             <img
-              className="w-full h-auto md:h-[250px] md:object-fit"
+              className="w-full h-auto mb-[2%] md:h-[250px] md:object-fit"
               src={project.img}
               alt="Project"
             />
-            <hr className="w-full border-2 border-solid border-dark-gray rounded-lg mt-0 mb-1" />
+            {/* <hr className="w-full border-2 border-solid border-dark-gray rounded-lg mt-0 mb-1" /> */}
             <h3 className=" font-normal mt-0 mb-[1%]">{project.name}</h3>
             <p className="text-center text-sm text-blue font-bold my-[1%]">
               {project.technologies}
             </p>
-            <p className="mt-[1%] mb-[2%] w-[95%] text-center">
+            <p className="mt-[1%] mb-[2%] w-[95%] text-center md:h-fit">
               {project.description}
             </p>
             <div className="flex w-[150px] justify-evenly">
