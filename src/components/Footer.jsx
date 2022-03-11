@@ -6,7 +6,7 @@ import GitHubIcon from '@mui/icons-material/GitHub'
 const Footer = () => {
   return (
     <footer className="bg-blue h-auto" id="contact">
-      <div className="w-[80vw] mx-auto">
+      <div className="w-[85vw] mx-auto md:w-[60vw]">
         <p className="text-center text-white mt-0 mb-[2%] pt-2 md:mb-[1%]">
           Reach me out on my social networks!
         </p>
