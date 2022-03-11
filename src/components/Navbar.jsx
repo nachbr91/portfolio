@@ -25,7 +25,7 @@ const Navbar = () => {
   return (
     <nav>
       <AppBar position="static" className="bg-blue">
-        <Toolbar disableGutters className="container">
+        <Toolbar disableGutters className="w-[95vw] mx-auto md:w-[70vw]">
           <img
             className="h-7 w-auto ml-2"
             src={require('../assets/logo.png')}
@@ -159,7 +159,6 @@ const Navbar = () => {
           </Box>
         </Toolbar>
       </AppBar>
-      <style>.hover-underline-animation {}</style>
     </nav>
   )
 }

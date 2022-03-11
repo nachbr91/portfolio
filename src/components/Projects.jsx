@@ -50,15 +50,19 @@ const Projects = () => {
   ]
 
   return (
-    <section className="container h-auto" id="projects">
+    <section className="w-[90vw] mx-auto h-auto md:w-[70vw]" id="projects">
       <h2 className="text-center text-xl">Projects</h2>
-      <div className="flex flex-col">
+      <div className="flex flex-col md:flex-row md:flex-wrap">
         {projectsData.map((project) => (
           <div
-            className="flex flex-col justify-center flex-1 items-center h-auto mx-auto border-[3px] border-solid rounded-lg border-dark-gray mb-[5%]"
+            className="flex flex-col justify-center items-center h-auto mx-auto border-[3px] border-solid rounded-lg border-dark-gray mb-[5%] md:w-[45%] md:h-fit"
             key={project.name}
           >
-            <img className="w-full h-auto" src={project.img} alt="Project" />
+            <img
+              className="w-full h-auto md:h-[250px] md:object-fit"
+              src={project.img}
+              alt="Project"
+            />
             <hr className="w-full border-2 border-solid border-dark-gray rounded-lg mt-0 mb-1" />
             <h3 className=" font-normal mt-0 mb-[1%]">{project.name}</h3>
             <p className="text-center text-sm text-blue font-bold my-[1%]">

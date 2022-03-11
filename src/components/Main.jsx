@@ -24,7 +24,7 @@ const Main = () => {
   }, [])
 
   return (
-    <main className="container">
+    <main className="w-[95vw] mx-auto md:w-[70vw]">
       <Fade delay={300}>
         <h2 className="text-2xl font-normal text-center tracking-wide">
           Hi There! I'm <span className="font-bold">Nacho</span>
@@ -54,10 +54,13 @@ const Main = () => {
       <TechCarousel />
       {!isHidden && (
         <div className="animate-fadeIn">
-          <p className="text-xl text-center mt-[6%] mx-auto w-[60%]">
+          <p className="text-xl text-center mt-[6%] mx-auto w-[60%] md:hidden">
             Swipe Up to know me better!
           </p>
-          <div className="animate-bounce text-blue text-center mt-[10%]">
+          <p className="text-xl text-center mt-[6%] mx-auto w-[60%] sm:hidden">
+            Scroll Down to know me better!
+          </p>
+          <div className="animate-bounce text-blue text-center mt-[10%] md:hidden">
             <SwipeUpIcon sx={{ width: 60, height: 60 }} />
           </div>
         </div>

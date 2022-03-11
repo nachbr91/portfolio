@@ -4,13 +4,9 @@ module.exports = {
   content: ['./src/**/*.{js,jsx}'],
   important: '#root',
   theme: {
-    container: {
-      padding: {
-        DEFAULT: '1rem',
-        sm: '1rem',
-        lg: '4rem',
-      },
-      center: true,
+    screens: {
+      sm: { max: '767px' },
+      md: { min: '768px' },
     },
     colors: {
       transparent: 'transparent',

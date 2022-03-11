@@ -71,12 +71,12 @@ const Skills = () => {
 
   return (
     <section className="bg-gray h-auto" id="skills">
-      <div className="container">
+      <div className="w-[95vw] mx-auto md:w-[70vw]">
         <h2 className="text-xl text-center pt-3 mb-1">Stack & Tools</h2>
         <div className="flex flex-wrap justify-evenly pb-3">
           {skillsData.map((skill) => (
             <a
-              className="hover:cursor-pointer"
+              className="hover:cursor-pointer hover:animate-bob hover:animate-float focus:animate-bob focus:animate-float"
               href={skill.url}
               target="_blank"
               rel="noreferrer"
