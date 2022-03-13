@@ -26,11 +26,13 @@ const Navbar = () => {
     <nav>
       <AppBar position="static" className="bg-blue">
         <Toolbar disableGutters className="w-[95vw] mx-auto md:w-[70vw]">
-          <img
-            className="h-7 w-auto ml-2"
-            src={require('../assets/logo.png')}
-            alt="Nacho Benito Logo"
-          />
+          <a href="https://nachobenito.dev" target="_blnak" rel="noreferrer">
+            <img
+              className="h-7 w-auto ml-2"
+              src={require('../assets/logo.png')}
+              alt="Nacho Benito Logo"
+            />
+          </a>
           <Box
             sx={{
               flexGrow: 1,

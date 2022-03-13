@@ -7,6 +7,7 @@ module.exports = {
     screens: {
       sm: { max: '767px' },
       md: { min: '768px' },
+      lg: { min: '1028px' },
     },
     colors: {
       transparent: 'transparent',
@@ -60,6 +61,7 @@ module.exports = {
       animation: {
         carousel: 'carousel 8s ease-in-out infinite',
         fadeIn: 'fadeIn 0.3s',
+        fadeInInfinite: 'fadeIn 1.5s ease-in-out infinite',
         bob: 'bob .3s 0s ease-out 1 infinite forwards nomral',
         float: 'float .9s 0s ease-in-out infinite alternate',
       },

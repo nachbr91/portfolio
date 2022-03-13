@@ -4,6 +4,8 @@ import Typewriter from 'typewriter-effect'
 import introImg from '../assets/introduction.svg'
 import TechCarousel from './TechCarousel'
 import SwipeUpIcon from '@mui/icons-material/SwipeUp'
+import MouseOutlined from '@mui/icons-material/MouseOutlined'
+import ArrowCircleDownOutlined from '@mui/icons-material/ArrowCircleDownOutlined'
 
 const Main = () => {
   const [isWrite, setIsWrite] = useState(false)
@@ -62,6 +64,13 @@ const Main = () => {
           </p>
           <div className="animate-bounce text-blue text-center mt-[10%] md:hidden">
             <SwipeUpIcon sx={{ width: 60, height: 60 }} />
+          </div>
+          <div className="flex justify-center items-center text-blue text-center mt-[2%] sm:hidden">
+            <MouseOutlined sx={{ width: 60, height: 60 }} />
+            <ArrowCircleDownOutlined
+              className="animate-bounce mt-[1%]"
+              sx={{ width: 40, height: 40 }}
+            />
           </div>
         </div>
       )}
