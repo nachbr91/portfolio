@@ -1,9 +1,9 @@
-import CodeIcon from '@mui/icons-material/Code'
-import PreviewIcon from '@mui/icons-material/Preview'
+import GitHubIcon from '@mui/icons-material/GitHub'
 import portfolioImg from '../assets/temporal.png'
 import ironjobsImg from '../assets/ironjobs.png'
 import f1appImg from '../assets/f1app.png'
 import ironslugImg from '../assets/ironslug.png'
+import { HttpOutlined } from '@mui/icons-material'
 
 const Projects = () => {
   const projectsData = [
@@ -21,7 +21,7 @@ const Projects = () => {
     {
       name: 'F1 App',
       technologies: [
-        'JavaScript (ES6) | Rest API | Responsive | Node.js | Express | MongoDB | Passport | HTML5 | CSS3 | Bootstrap | Handlebars | Heroku',
+        'JavaScript (ES6) | Rest API | Responsive | Node.js | Express | MongoDB | Passport | Bootstrap | Handlebars | Heroku',
       ],
       url: 'https://myapp-f1.herokuapp.com/',
       githubRepo: 'https://github.com/nachbr91/Project_2-Ironhack',
@@ -58,12 +58,13 @@ const Projects = () => {
             className="flex flex-col justify-center items-center h-auto mx-auto mb-[5%] md:w-[45%] md:h-fit"
             key={project.name}
           >
-            <img
-              className="w-full h-auto mb-[2%] md:h-[320px] md:w-[100%] md:object-fit"
-              src={project.img}
-              alt="Project"
-            />
-            {/* <hr className="w-full border-2 border-solid border-dark-gray rounded-lg mt-0 mb-1" /> */}
+            <a href={project.url} target="_blank" rel="noreferrer">
+              <img
+                className="w-full h-auto mb-[2%]"
+                src={project.img}
+                alt="Project"
+              />
+            </a>
             <h3 className=" font-normal mt-0 mb-[1%]">{project.name}</h3>
             <p className="text-center text-sm text-blue font-bold my-[1%]">
               {project.technologies}
@@ -79,7 +80,7 @@ const Projects = () => {
                 rel="noreferrer"
                 alt="GitHub Repository"
               >
-                <CodeIcon fontSize="large" />
+                <GitHubIcon fontSize="large" />
               </a>
               <a
                 className="text-blue hover:animate-bob hover:animate-float focus:animate-bob focus:animate-float active:animate-bob active:animate-float"
@@ -88,7 +89,7 @@ const Projects = () => {
                 rel="noreferrer"
                 alt="GitHub Repository"
               >
-                <PreviewIcon fontSize="large" />
+                <HttpOutlined fontSize="large" />
               </a>
             </div>
           </div>
