@@ -27,53 +27,70 @@ const Main = () => {
 
   return (
     <main className="w-[95vw] mx-auto md:w-[70vw]">
-      <Fade delay={300}>
-        <h2 className="text-2xl font-normal text-center tracking-wide">
-          Hi There! I'm <span className="font-bold">Nacho</span>
-        </h2>
-      </Fade>
-      <Fade delay={300}>
-        <img
-          className="w-[80%] h-auto block ml-auto mr-auto "
-          src={introImg}
-          alt="Person working with a laptop"
-        />
-      </Fade>
-      {isWrite && (
-        <h2 className="text-xl font-normal text-center w-full mr-auto ml-auto tracking-wide">
-          <Typewriter
-            onInit={(typewriter) => {
-              typewriter
-                .changeDelay(65)
-                .typeString(
-                  "I'm a Junior <strong>Full-Stack Developer</strong>"
-                )
-                .start()
-            }}
-          />
-        </h2>
-      )}
-      <TechCarousel />
-      {!isHidden && (
-        <div className="animate-fadeIn">
-          <p className="text-xl text-center mt-[6%] mx-auto w-[60%] md:hidden">
-            Swipe Up to know me better!
-          </p>
-          <p className="text-xl text-center mt-[6%] mx-auto w-[60%] sm:hidden">
-            Scroll Down to know me better!
-          </p>
-          <div className="animate-bounce text-blue text-center mt-[10%] md:hidden">
-            <SwipeUpIcon sx={{ width: 60, height: 60 }} />
+      <div className="md:flex md:flex-col md:mt-[3%] md:ml-[2%]">
+        <div>
+          <Fade delay={300}>
+            <h2 className="text-2xl font-normal text-center tracking-wide md:hidden">
+              Hi There! I'm <span className="font-bold">Nacho</span>
+            </h2>
+          </Fade>
+        </div>
+        <div className="md:flex justify-center">
+          <div className="md:w-[50%] text-center">
+            <Fade delay={300}>
+              <img
+                className="w-[80%] h-auto block ml-auto mr-auto md:w-[550px] md:h-auto md:m-0 md:object-contain lg:ml-[20%]"
+                src={introImg}
+                alt="Person working with a laptop"
+              />
+            </Fade>
           </div>
-          <div className="flex justify-center items-center text-blue text-center mt-[2%] sm:hidden">
-            <MouseOutlined sx={{ width: 60, height: 60 }} />
-            <ArrowCircleDownOutlined
-              className="animate-bounce mt-[1%]"
-              sx={{ width: 40, height: 40 }}
-            />
+          <div className="md:mt-[2%] md:ml-[2%] md:w-[60%] lg:ml-[10%]">
+            <Fade delay={300} className="sm:hidden">
+              <h2 className="sm:hidden text-3xl font-normal">
+                Hi There! I'm <span className="font-bold">Nacho</span>
+              </h2>
+            </Fade>
+            {isWrite && (
+              <h2 className="text-xl font-normal text-center w-full mr-auto ml-auto tracking-wide md:text-2xl md:text-left md:w-full">
+                <Typewriter
+                  onInit={(typewriter) => {
+                    typewriter
+                      .changeDelay(65)
+                      .typeString(
+                        "I'm a Junior <strong>Full-Stack Developer</strong>"
+                      )
+                      .start()
+                  }}
+                />
+              </h2>
+            )}
+            <TechCarousel />
           </div>
         </div>
-      )}
+      </div>
+      <div>
+        {!isHidden && (
+          <div className="animate-fadeIn">
+            <p className="text-xl text-center mt-[6%] mx-auto w-[60%] md:hidden">
+              Swipe Up to know me better!
+            </p>
+            <p className="text-2xl text-center mt-[6%] mx-auto w-[60%] sm:hidden">
+              Scroll Down to know me better!
+            </p>
+            <div className="animate-bounce text-blue text-center mt-[10%] md:hidden">
+              <SwipeUpIcon sx={{ width: 60, height: 60 }} />
+            </div>
+            <div className="flex justify-center items-center text-blue text-center mt-[2%] sm:hidden">
+              <MouseOutlined sx={{ width: 60, height: 60 }} />
+              <ArrowCircleDownOutlined
+                className="animate-bounce mt-[1%]"
+                sx={{ width: 40, height: 40 }}
+              />
+            </div>
+          </div>
+        )}
+      </div>
     </main>
   )
 }

@@ -7,7 +7,7 @@ module.exports = {
     screens: {
       sm: { max: '767px' },
       md: { min: '768px' },
-      lg: { min: '1028px' },
+      lg: { min: '1445px' },
     },
     colors: {
       transparent: 'transparent',

@@ -18,19 +18,19 @@ const TechCarousel = () => {
           <Fade>
             <div className="h-[29px] overflow-hidden">
               <div className="h-full animate-carousel">
-                <div className="h-[29px] text-xl text-blue font-bold flex flex-col items-center">
+                <div className="h-[29px] text-xl text-blue font-bold flex flex-col items-center md:text-2xl md:items-start">
                   JavaScript (ES6)
                 </div>
-                <div className="h-[29px] text-xl text-blue font-bold flex flex-col items-center">
+                <div className="h-[29px] text-xl text-blue font-bold flex flex-col items-center md:text-2xl md:items-start">
                   MongoDB
                 </div>
-                <div className="h-[29px] text-xl text-blue font-bold flex flex-col items-center">
+                <div className="h-[29px] text-xl text-blue font-bold flex flex-col items-center md:text-2xl md:items-start">
                   Express
                 </div>
-                <div className="h-[29px] text-xl text-blue font-bold flex flex-col items-center">
+                <div className="h-[29px] text-xl text-blue font-bold flex flex-col items-center md:text-2xl md:items-start">
                   Node.js
                 </div>
-                <div className="h-[29px] text-xl text-blue font-bold flex flex-col items-center">
+                <div className="h-[29px] text-xl text-blue font-bold flex flex-col items-center md:text-2xl md:items-start">
                   React
                 </div>
               </div>

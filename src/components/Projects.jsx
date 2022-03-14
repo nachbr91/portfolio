@@ -4,6 +4,7 @@ import ironjobsImg from '../assets/ironjobs.png'
 import f1appImg from '../assets/f1app.png'
 import ironslugImg from '../assets/ironslug.png'
 import { HttpOutlined } from '@mui/icons-material'
+import { Fade } from 'react-reveal'
 
 const Projects = () => {
   const projectsData = [
@@ -54,45 +55,47 @@ const Projects = () => {
       <h2 className="text-center text-xl">Projects</h2>
       <div className="flex flex-col md:flex-row md:flex-wrap">
         {projectsData.map((project) => (
-          <div
-            className="flex flex-col justify-center items-center h-auto mx-auto mb-[5%] md:w-[45%] md:h-fit"
-            key={project.name}
-          >
-            <a href={project.url} target="_blank" rel="noreferrer">
-              <img
-                className="w-full h-auto mb-[2%]"
-                src={project.img}
-                alt="Project"
-              />
-            </a>
-            <h3 className=" font-normal mt-0 mb-[1%]">{project.name}</h3>
-            <p className="text-center text-sm text-blue font-bold my-[1%]">
-              {project.technologies}
-            </p>
-            <p className="mt-[1%] mb-[2%] w-[95%] text-center md:h-fit">
-              {project.description}
-            </p>
-            <div className="flex w-[150px] justify-evenly">
-              <a
-                className="text-blue hover:animate-bob hover:animate-float focus:animate-bob focus:animate-float active:animate-bob active:animate-float"
-                href={project.githubRepo}
-                target="_blank"
-                rel="noreferrer"
-                alt="GitHub Repository"
-              >
-                <GitHubIcon fontSize="large" />
+          <Fade bottom>
+            <div
+              className="flex flex-col justify-center items-center h-auto mx-auto mb-[5%] ease-in-out duration-500 sm:border-2 sm:border-solid sm:border-gray sm:rounded-md md:w-[45%] md:h-fit md:hover:shadow-md md:hover:rounded-md"
+              key={project.name}
+            >
+              <a href={project.url} target="_blank" rel="noreferrer">
+                <img
+                  className="w-full h-auto mb-[2%]"
+                  src={project.img}
+                  alt="Project"
+                />
               </a>
-              <a
-                className="text-blue hover:animate-bob hover:animate-float focus:animate-bob focus:animate-float active:animate-bob active:animate-float"
-                href={project.url}
-                target="_blank"
-                rel="noreferrer"
-                alt="GitHub Repository"
-              >
-                <HttpOutlined fontSize="large" />
-              </a>
+              <h3 className=" font-normal mt-0 mb-[1%]">{project.name}</h3>
+              <p className="text-center text-sm text-blue font-bold my-[1%]">
+                {project.technologies}
+              </p>
+              <p className="mt-[1%] mb-[2%] w-[95%] text-center md:h-fit">
+                {project.description}
+              </p>
+              <div className="flex w-[150px] justify-evenly">
+                <a
+                  className="text-blue hover:animate-bob hover:animate-float focus:animate-bob focus:animate-float active:animate-bob active:animate-float"
+                  href={project.githubRepo}
+                  target="_blank"
+                  rel="noreferrer"
+                  alt="GitHub Repository"
+                >
+                  <GitHubIcon fontSize="large" />
+                </a>
+                <a
+                  className="text-blue hover:animate-bob hover:animate-float focus:animate-bob focus:animate-float active:animate-bob active:animate-float"
+                  href={project.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  alt="GitHub Repository"
+                >
+                  <HttpOutlined fontSize="large" />
+                </a>
+              </div>
             </div>
-          </div>
+          </Fade>
         ))}
       </div>
     </section>
