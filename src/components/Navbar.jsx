@@ -65,7 +65,7 @@ const Navbar = () => {
               Contact
             </a>
             <a
-              href="https://drive.google.com/file/d/1bZXSkl5gw_Ohup5Qnkw9oqfzVuFINn9p/view?usp=sharing"
+              href="https://drive.google.com/file/d/17GmPf7pbLJzE0i5dbdEMGOFytSr1Buuw/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
               className="text-base text-white font-sans font-bold uppercase no-underline mr-3 inline-block relative before:content-[''] before:absolute before:bg-white before:left-0 before:rigth-full before:bottom-0 before:h-0.5 hover:before:right-0"
@@ -148,7 +148,7 @@ const Navbar = () => {
               </MenuItem>
               <MenuItem onClick={handleCloseNavMenu}>
                 <Link
-                  href="https://drive.google.com/file/d/1bZXSkl5gw_Ohup5Qnkw9oqfzVuFINn9p/view?usp=sharing"
+                  href="https://drive.google.com/file/d/17GmPf7pbLJzE0i5dbdEMGOFytSr1Buuw/view?usp=sharing"
                   target="_blank"
                   underline="none"
                 >
