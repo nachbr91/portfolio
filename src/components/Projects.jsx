@@ -1,5 +1,5 @@
 import GitHubIcon from '@mui/icons-material/GitHub'
-import portfolioImg from '../assets/temporal.png'
+import portfolioImg from '../assets/portfolio.png'
 import ironjobsImg from '../assets/ironjobs.png'
 import f1appImg from '../assets/f1app.png'
 import ironslugImg from '../assets/ironslug.png'
