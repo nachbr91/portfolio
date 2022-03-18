@@ -39,7 +39,7 @@ const Main = () => {
           <div className="md:mt-[3%] md:w-[50%] text-center">
             <Fade delay={300}>
               <img
-                className="w-[80%] h-auto block ml-auto mr-auto md:w-full md:h-auto md:m-0 md:object-contain lg:ml-[20%]"
+                className="w-[250px] h-auto block ml-auto mr-auto md:w-full md:h-auto md:m-0 md:object-contain lg:ml-[20%]"
                 src={introImg}
                 alt="Person working with a laptop"
               />
