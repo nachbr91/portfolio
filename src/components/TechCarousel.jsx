@@ -14,7 +14,7 @@ const TechCarousel = () => {
   return (
     <Fragment>
       {!hidden && (
-        <div className="mt-[6%]">
+        <div className="mt-[6%] md:mt-[5%]">
           <Fade>
             <div className="h-[29px] overflow-hidden">
               <div className="h-full animate-carousel">
