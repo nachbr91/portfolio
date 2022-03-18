@@ -22,6 +22,39 @@ const Navbar = () => {
     setAnchorElNav(null)
   }
 
+  const pages = [
+    {
+      href: '#about-me',
+      name: 'About Me',
+      target: null,
+      rel: null,
+    },
+    {
+      href: '#skills',
+      name: 'Stack & Tools',
+      target: null,
+      rel: null,
+    },
+    {
+      href: '#projects',
+      name: 'Projects',
+      target: null,
+      rel: null,
+    },
+    {
+      href: '#contact',
+      name: 'Contact',
+      target: null,
+      rel: null,
+    },
+    {
+      href: 'https://drive.google.com/file/d/17GmPf7pbLJzE0i5dbdEMGOFytSr1Buuw/view?usp=sharing',
+      name: 'Resume',
+      target: '_blank',
+      rel: 'noreferrer',
+    },
+  ]
+
   return (
     <nav>
       <AppBar position="static" className="bg-blue">
@@ -43,38 +76,17 @@ const Navbar = () => {
               justifyContent: 'flex-end',
             }}
           >
-            <a
-              href="#about-me"
-              className="text-base text-white font-sans font-bold uppercase no-underline mr-3 inline-block relative before:content-[''] before:absolute before:bg-white before:left-0 before:rigth-full before:bottom-0 before:h-0.5 hover:before:right-0"
-            >
-              About Me
-            </a>
-            <a
-              href="#skills"
-              className="text-base text-white font-sans font-bold uppercase no-underline mr-3 inline-block relative before:content-[''] before:absolute before:bg-white before:left-0 before:rigth-full before:bottom-0 before:h-0.5 hover:before:right-0"
-            >
-              Stack & Tools
-            </a>
-            <a
-              href="#projects"
-              className="text-base text-white font-sans font-bold uppercase no-underline mr-3 inline-block relative before:content-[''] before:absolute before:bg-white before:left-0 before:rigth-full before:bottom-0 before:h-0.5 hover:before:right-0"
-            >
-              Projects
-            </a>
-            <a
-              href="#contact"
-              className="text-base text-white font-sans font-bold uppercase no-underline mr-3 inline-block relative before:content-[''] before:absolute before:bg-white before:left-0 before:rigth-full before:bottom-0 before:h-0.5 hover:before:right-0"
-            >
-              Contact
-            </a>
-            <a
-              href="https://drive.google.com/file/d/17GmPf7pbLJzE0i5dbdEMGOFytSr1Buuw/view?usp=sharing"
-              target="_blank"
-              rel="noreferrer"
-              className="text-base text-white font-sans font-bold uppercase no-underline mr-3 inline-block relative before:content-[''] before:absolute before:bg-white before:left-0 before:rigth-full before:bottom-0 before:h-0.5 hover:before:right-0"
-            >
-              Resume
-            </a>
+            {pages.map((page) => (
+              <a
+                href={page.href}
+                target={page.target}
+                rel={page.rel}
+                key={page.name}
+                className="text-base text-white font-sans font-bold uppercase no-underline mr-3 inline-block relative before:content-[''] before:absolute before:bg-white before:left-0 before:rigth-full before:bottom-0 before:h-0.5 hover:before:right-0"
+              >
+                {page.name}
+              </a>
+            ))}
           </Box>
           <Box
             sx={{
@@ -105,65 +117,24 @@ const Navbar = () => {
                 display: { xs: 'block', md: 'none' },
               }}
             >
-              <MenuItem onClick={handleCloseNavMenu}>
-                <Link href="#about-me" underline="none">
-                  <Typography
-                    fontFamily="Poppins"
-                    color="#000"
-                    textAlign="center"
+              {pages.map((page) => (
+                <MenuItem onClick={handleCloseNavMenu} key={page.name}>
+                  <Link
+                    href={page.href}
+                    target={page.target}
+                    rel={page.rel}
+                    underline="none"
                   >
-                    About Me
-                  </Typography>
-                </Link>
-              </MenuItem>
-              <MenuItem onClick={handleCloseNavMenu}>
-                <Link href="#skills" underline="none">
-                  <Typography
-                    fontFamily="Poppins"
-                    color="#000"
-                    textAlign="center"
-                  >
-                    Stack & Tools
-                  </Typography>
-                </Link>
-              </MenuItem>
-              <MenuItem onClick={handleCloseNavMenu}>
-                <Link href="#projects" underline="none">
-                  <Typography
-                    fontFamily="Poppins"
-                    color="#000"
-                    textAlign="center"
-                  >
-                    Projects
-                  </Typography>
-                </Link>
-              </MenuItem>
-              <MenuItem onClick={handleCloseNavMenu}>
-                <Link href="#contact" underline="none">
-                  <Typography
-                    fontFamily="Poppins"
-                    color="#000"
-                    textAlign="center"
-                  >
-                    Contact
-                  </Typography>
-                </Link>
-              </MenuItem>
-              <MenuItem onClick={handleCloseNavMenu}>
-                <Link
-                  href="https://drive.google.com/file/d/17GmPf7pbLJzE0i5dbdEMGOFytSr1Buuw/view?usp=sharing"
-                  target="_blank"
-                  underline="none"
-                >
-                  <Typography
-                    fontFamily="Poppins"
-                    color="#000"
-                    textAlign="center"
-                  >
-                    Resume
-                  </Typography>
-                </Link>
-              </MenuItem>
+                    <Typography
+                      fontFamily="Poppins"
+                      color="#000"
+                      textAlign="center"
+                    >
+                      {page.name}
+                    </Typography>
+                  </Link>
+                </MenuItem>
+              ))}
             </Menu>
           </Box>
         </Toolbar>
