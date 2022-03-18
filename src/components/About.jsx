@@ -37,7 +37,7 @@ const About = () => {
             rel="noreferrer"
             className="no-underline text-black"
           >
-            <div className="flex transform my-[3%] w-[96%] mx-auto rounded-md items-center shadow-md md:hover:animate-bob md:hover:animate-float md:w-fit lg:w-[55%]">
+            <div className="flex transform my-[3%] w-[96%] mx-auto rounded-md items-center shadow-md md:hover:animate-bob md:hover:animate-float md:w-[60%] lg:w-[55%]">
               <div className="mx-auto">
                 <img
                   className="h-[80px] w-auto mt-1.5 mb-0 ml-1"
