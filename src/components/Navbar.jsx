@@ -25,8 +25,11 @@ const Navbar = () => {
   return (
     <nav>
       <AppBar position="static" className="bg-blue">
-        <Toolbar disableGutters className="w-[95vw] mx-auto md:w-[70vw]">
-          <a href="https://nachobenito.dev" target="_blnak" rel="noreferrer">
+        <Toolbar
+          disableGutters
+          className="w-[95vw] mx-auto md:w-[85vw] lg:w-[70vw]"
+        >
+          <a href="https://nachobenito.dev" target="_blank" rel="noreferrer">
             <img
               className="h-7 w-auto ml-2"
               src={require('../assets/logo.png')}

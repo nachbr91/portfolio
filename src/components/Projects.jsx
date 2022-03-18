@@ -51,7 +51,10 @@ const Projects = () => {
   ]
 
   return (
-    <section className="w-[90vw] mx-auto h-auto md:w-[70vw]" id="projects">
+    <section
+      className="w-[95vw] mx-auto h-auto md:w-[85vw] lg:w-[70vw]"
+      id="projects"
+    >
       <h2 className="text-center text-xl">Projects</h2>
       <div className="flex flex-col md:flex-row md:flex-wrap">
         {projectsData.map((project) => (

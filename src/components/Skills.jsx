@@ -71,7 +71,7 @@ const Skills = () => {
 
   return (
     <section className="bg-gray h-auto" id="skills">
-      <div className="w-[95vw] mx-auto md:w-[70vw]">
+      <div className="w-[95vw] mx-auto md:w-[85vw] lg:w-[70vw]">
         <h2 className="text-xl text-center pt-3 mb-1">Stack & Tools</h2>
         <div className="flex flex-wrap justify-evenly pb-3">
           {skillsData.map((skill) => (

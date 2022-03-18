@@ -26,7 +26,7 @@ const Main = () => {
   }, [])
 
   return (
-    <main className="w-[95vw] mx-auto md:w-[70vw]">
+    <main className="w-[95vw] mx-auto md:w-[85vw] lg:w-[70vw]">
       <div className="md:flex md:flex-col md:mt-[3%] md:ml-[2%]">
         <div>
           <Fade delay={300}>
@@ -75,7 +75,7 @@ const Main = () => {
             <p className="text-xl text-center mt-[6%] mx-auto w-[60%] md:hidden">
               Swipe Up to know me better!
             </p>
-            <p className="text-xl text-center mt-[6%] mx-auto w-[60%] mb-0 sm:hidden">
+            <p className="text-xl text-center mt-[4%] mx-auto w-[60%] mb-0 sm:hidden">
               Scroll Down to know me better!
             </p>
             <div className="animate-bounce text-blue text-center mt-[10%] md:hidden">

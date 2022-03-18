@@ -4,7 +4,7 @@ import certifiedLogo from '../assets/certified-logo.png'
 const About = () => {
   return (
     <section
-      className="w-[95vw] mx-auto h-auto md:w-[80vw] md:mt-[3%]"
+      className="w-[95vw] mx-auto h-auto md:w-[85vw] md:mt-[3%]"
       id="about-me"
     >
       <h2 className="text-xl text-center mb-[2%]">About Me</h2>
