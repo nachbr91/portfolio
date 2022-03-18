@@ -1,5 +1,4 @@
-// import picture from '../assets/picture.png'
-import picture2 from '../assets/picture2.png'
+import picture from '../assets/picture.png'
 import certifiedLogo from '../assets/certified-logo.png'
 
 const About = () => {
@@ -12,7 +11,7 @@ const About = () => {
       <div className="flex flex-col items-center md:flex-row md:justify-center">
         <img
           className="rounded-full h-[150px] w-auto mb-[3%] object-contain md:h-[200px]"
-          src={picture2}
+          src={picture}
           alt="Nacho Benito"
         />
         <div className="md:w-[60%]">

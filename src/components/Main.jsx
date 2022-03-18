@@ -36,10 +36,10 @@ const Main = () => {
           </Fade>
         </div>
         <div className="md:flex justify-center">
-          <div className="md:w-[50%] text-center">
+          <div className="md:mt-[3%] md:w-[50%] text-center">
             <Fade delay={300}>
               <img
-                className="w-[80%] h-auto block ml-auto mr-auto md:w-[550px] md:h-auto md:m-0 md:object-contain lg:ml-[20%]"
+                className="w-[80%] h-auto block ml-auto mr-auto md:w-full md:h-auto md:m-0 md:object-contain lg:ml-[20%]"
                 src={introImg}
                 alt="Person working with a laptop"
               />
@@ -47,12 +47,12 @@ const Main = () => {
           </div>
           <div className="md:mt-[2%] md:ml-[2%] md:w-[60%] lg:ml-[10%]">
             <Fade delay={300} className="sm:hidden">
-              <h2 className="sm:hidden text-3xl font-normal">
+              <h2 className="sm:hidden text-2xl font-normal">
                 Hi There! I'm <span className="font-bold">Nacho</span>
               </h2>
             </Fade>
             {isWrite && (
-              <h2 className="text-xl font-normal text-center w-full mr-auto ml-auto tracking-wide md:text-2xl md:text-left md:w-full">
+              <h2 className="text-xl font-normal text-center w-full mr-auto ml-auto tracking-wide md:text-xl md:text-left md:w-full">
                 <Typewriter
                   onInit={(typewriter) => {
                     typewriter
@@ -75,17 +75,17 @@ const Main = () => {
             <p className="text-xl text-center mt-[6%] mx-auto w-[60%] md:hidden">
               Swipe Up to know me better!
             </p>
-            <p className="text-2xl text-center mt-[6%] mx-auto w-[60%] sm:hidden">
+            <p className="text-xl text-center mt-[6%] mx-auto w-[60%] mb-0 sm:hidden">
               Scroll Down to know me better!
             </p>
             <div className="animate-bounce text-blue text-center mt-[10%] md:hidden">
               <SwipeUpIcon sx={{ width: 60, height: 60 }} />
             </div>
-            <div className="flex justify-center items-center text-blue text-center mt-[2%] sm:hidden">
-              <MouseOutlined sx={{ width: 60, height: 60 }} />
+            <div className="flex justify-center items-center text-blue text-center mt-[1%] sm:hidden">
+              <MouseOutlined sx={{ width: 40, height: 40 }} />
               <ArrowCircleDownOutlined
                 className="animate-bounce mt-[1%]"
-                sx={{ width: 40, height: 40 }}
+                sx={{ width: 30, height: 30 }}
               />
             </div>
           </div>

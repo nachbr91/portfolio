@@ -52,7 +52,7 @@ const Footer = () => {
             href="https://www.linkedin.com/in/nachobenitoroig/"
             target="_blank"
             rel="noreferrer"
-            className="text-sm text-white ml-[5px] no-underline"
+            className="text-sm text-white ml-[3.5px] no-underline"
           >
             Nacho Benito
           </a>
